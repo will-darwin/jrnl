@@ -48,7 +48,7 @@ elif choice.lower() == "s":
 ___|  /  //      / |.  \    \. | \  |___   
 /  :|_/ )|:  __   \ |    \    \ |( \_|:  \  
 (_______/ |__|  \___) \___|\____\) \_______)                                              
-"""+ "v" + VERSION + "\tBy Will D" + "\n\n—————————————————————————————")
+"""+ "v" + VERSION + "\n\n——————————————————————————————")
 
     # Calculate the total duration of all work sessions
     total_duration = sum(jrnl_sessions.values())
@@ -57,7 +57,7 @@ ___|  /  //      / |.  \    \. | \  |___
         # Calculate the percentage of time spent on this category
         percentage = round(value / total_duration * 100, 2)
         print(f"{key:10} {value:>4} mins ({percentage}%)")
-    print("—————————————————————————————\n" + f"TOTAL {total_duration:>9} mins / {total_duration_hrs} hrs\n" + "—————————————————————————————\n")
+    print("——————————————————————————————\n" + f"TOTAL {total_duration:>9} mins / {total_duration_hrs} hrs\n" + "——————————————————————————————\n")
 
 # If the user entered an invalid choice, let them know
 else:
